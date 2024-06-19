@@ -19,9 +19,9 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+						<a href="index.html" class="logo"><strong>心動時刻</strong> <span>拍攝的每一秒</span></a>
 						<nav>
-							<a href="#menu">Menu</a>
+							
 						</nav>
 					</header>
 
@@ -43,7 +43,7 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>嗨!大家好！我是斯淮 ^^</h1>
+								<h1>斯淮的作品 ^^</h1>
 							</header>
 							<div class="content">
 								<p>感謝那些讓我拍拍的帥哥美女 ^o^ </p>
@@ -65,7 +65,7 @@
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">凌溧</a></h3>
-										<p>林安泰古厝 享受者古典中的寧靜</p>
+										<p>林安泰古厝 典雅</p>
 									</header>
 								</article>
 								<article>
@@ -74,7 +74,7 @@
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">紅茶</a></h3>
-										<p>元智大學 假裝使用魔法中</p>
+										<p>元智大學 魔法</p>
 									</header>
 								</article>
 								<article>
@@ -83,7 +83,7 @@
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">汝汝</a></h3>
-										<p>在墾丁白沙灣聆聽海之聲</p>
+										<p>墾丁白沙灣 聆聽</p>
 									</header>
 								</article>
 								<article>
@@ -92,7 +92,7 @@
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">泳裝少女</a></h3>
-										<p>新北 白沙灣 只是~我還在等</p>
+										<p>新北 白沙灣 還在等</p>
 									</header>
 								</article>
 								<article>
@@ -101,7 +101,7 @@
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">小奕&小紫</a></h3>
-										<p>野柳 閉眼~感受世界就在身邊</p>
+										<p>野柳 閉眼~感受</p>
 									</header>
 								</article>
 								<article>
@@ -110,7 +110,7 @@
 									</span>
 									<header class="major">
 										<h3><a href="landing.html" class="link">小妤</a></h3>
-										<p>金瓜石 低頭的溫柔~等待者良人</p>
+										<p>金瓜石 低頭不語</p>
 									</header>
 								</article>
 							</section>
@@ -119,11 +119,12 @@
 							<section id="two">
 								<div class="inner">
 									<header class="major">
-										<h2>Massa libero</h2>
+									<h2>感想</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+									<p> 攝影就是享受當下，在你覺得感動的時候，盡情的按下去，每當回顧照片時，你會發現感受它一直都在。</p>
+									<p>本人也喜歡欣賞別人的作品喔！如以下連結</p>
 									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
+										<li><a href="https://www.facebook.com/profile.php?id=100054608822542" target="_blank" class="button next">其他分享</a></li>
 									</ul>
 								</div>
 							</section>
@@ -134,10 +135,10 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="post" action="#" onsubmit="return mailto()">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">Name</label>
+											<label for="name">姓名</label>
 											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
@@ -145,38 +146,47 @@
 											<input type="text" name="email" id="email" />
 										</div>
 										<div class="field">
-											<label for="message">Message</label>
+											<label for="message">留言</label>
 											<textarea name="message" id="message" rows="6"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
+										<li><input type="submit" value="傳送" class="primary" /></li>
+										<li><input type="reset" value="清除" /></li>
 									</ul>
+									<script>
+										function mailto() {
+											name = document.getElementsByName('name')[0].value; // 把使用者輸入的名稱拿出來用
+											email = document.getElementsByName('email')[0].value; // 把使用者輸入的email拿出來用
+											message = document.getElementsByName('message')[0].value.replaceAll('\n', '%0D%0A'); // 把使用者輸入的內容拿出來用
+											window.location.href = "mailto:z0921807172@gmail.com?subject=我沒有問題&body=您好, 我是" + name + ":%0D%0A" + message;
+											return false;
+										}
+									</script>
 								</form>
 							</section>
 							<section class="split">
 								<section>
 									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
+										<span class="icon brands alt fa-line"></span>
+										<h3>Line</h3>
+										<a href="#">ID 楊斯淮</a>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-phone"></span>
 										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
+										<span>0921-XXXXXX</span>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
+										<h3>地址</h3>
+										<span>桃園市中壢區<br />
+										XXXXXXXXXXXXXXXXXXXX<br />
+										</span>
 									</div>
 								</section>
 							</section>
@@ -187,14 +197,11 @@
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
+								
+								<li><a href=https://www.facebook.com/profile.php?id=100000741950600 "#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								
 							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>&copy; </li><li>攝影: <a href="https://html5up.net">楊斯淮</a></li>
 							</ul>
 						</div>
 					</footer>
