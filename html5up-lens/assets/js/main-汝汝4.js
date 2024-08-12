@@ -488,7 +488,7 @@ var main = (function($) { var _ = {
 			breakpoints.on('>xsmall', function() {
 
 				if (_.current === null)
-					_.switchTo(0, true);  /* 網頁載入後要顯示第幾張 */
+					_.switchTo(3, true);  /* aaron:網頁載入後要顯示第幾張 */
 
 			});
 
